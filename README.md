@@ -2,7 +2,7 @@
 
 This is an API written with node.js using typescrit, express, JSON Web Tokens (jwt), mongoDB and mvc architecture.
 
-![technologies](https://github.com/diegopatriota/api-core/tree/main/imagesReadme/technologies.png)
+![technologies](https://github.com/DIEGOPATRIOTA/api-core/blob/main/imagesReadme/technologies.png)
 
 ## Pre-requisities 
 Runs on Node versions >= 10 
