@@ -2,11 +2,8 @@ import { Model, Types } from 'mongoose';
 import User, { IUser } from '../models/user';
 
 class UserRepository {
-  //private model: Model<IUser>;
-
-    constructor() {
-      //this.model = User;
-     }
+  
+    constructor() {}
 
         async getAll() {
           return await User.find();

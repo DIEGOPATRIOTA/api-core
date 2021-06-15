@@ -1,6 +1,6 @@
 # API CORE
 
-This is an API written with node.js using typescrit, express, JSON Web Tokens (jwt), mongoDB and mvc architecture.
+This is an API written with node.js using typescrit, express, JSON Web Tokens (jwt), mongoDB.
 
 ![technologies](https://github.com/DIEGOPATRIOTA/api-core/blob/main/imagesReadme/technologies.png)
 
