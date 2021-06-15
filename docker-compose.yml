@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  api-core-mongodb:
+    container_name: api-core-mongodb
+    image: mongo:latest
+    hostname: api-core-mongodb
+    ports:
+      - 27017:27017
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: patriota
+      
