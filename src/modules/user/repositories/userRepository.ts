@@ -4,7 +4,7 @@ import User, { IUser } from '../models/user';
 class UserRepository {
   
     constructor() {}
-    
+
         async getAll() {
           return await User.find();
         }
@@ -26,4 +26,5 @@ class UserRepository {
           return await User.findOneAndRemove({_id: _id});
         }
 }
+
 export default new UserRepository;

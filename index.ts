@@ -1,7 +1,19 @@
+import configJson from './src/infra/config/config.json';
 import { app, Application } from './src/interfaces';
-import userRouter from "./src/routers/userRouter";
 
-const port = 3000;
+const nodeEnv: any = process.env.NODE_ENV;
+const config: any = configJson;
+
+const mapEnvironmentVariables = config[nodeEnv];
+
+for (const key of Object.keys(mapEnvironmentVariables)) {
+    process.env[key] = mapEnvironmentVariables[key] 
+    console.log(`process.env.${key}: `,  mapEnvironmentVariables[key]);
+}
+
+import userRouter from "./src/modules/user/routers/userRouter";
+
+const SERVER_PORT = Number(process.env.PORT) || 3000;
 
 userRouter.dataBaseConnection();
 userRouter.routes();
@@ -17,4 +29,4 @@ function startApp(app: Application, port: number) {
     }
 }
 
-startApp(app, port);
+startApp(app, SERVER_PORT);

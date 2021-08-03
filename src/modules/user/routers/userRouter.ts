@@ -1,6 +1,6 @@
 import UserController from '../controllers/userController';
-import { v1Router } from '../interfaces';
-import {Database, auth } from '../config';
+import { v1Router } from '../../../interfaces';
+import {Database, auth } from '../../../infra';
 
 
 class userRouter {
@@ -11,9 +11,9 @@ class userRouter {
     this.routes();
   }
 
-  async dataBaseConnection() {
+ async dataBaseConnection() {
     await this.database.connect();
-  }
+  } 
 
   routes() {
     const endpoint: string = "/users";

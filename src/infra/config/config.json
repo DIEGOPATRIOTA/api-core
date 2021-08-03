@@ -1,0 +1,22 @@
+{
+    "development": {
+        "PORT": 3000,
+        "JWT_SECRET": "Ux7BJbK8Y59gLMNbV73B-amraLOG-mrZ7uBtRst9JbI",
+        "JWT_EXPIRES_IN": "1h",
+        "MONGO_HOST": "127.0.0.1",
+        "MONGO_PORT": 27017,
+        "MONGO_DATA_BASE": "api-core",
+        "MONGO_USERNAME": "root",
+        "MONGO_PASSWORD": "patriota"        
+    },
+    "production": {
+        "PORT": 3000,
+        "JWT_SECRET": "Ux7BJbK8Y59gLMNbV73B-amraLOG-mrZ7uBtRst9JbI",
+        "JWT_EXPIRES_IN": "1h",
+        "MONGO_HOST": "127.0.0.1",
+        "MONGO_PORT": 27017,
+        "MONGO_DATA_BASE": "api-core",
+        "MONGO_USERNAME": "root",
+        "MONGO_PASSWORD": "patriota"
+    }
+}

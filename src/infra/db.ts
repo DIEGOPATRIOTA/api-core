@@ -1,16 +1,15 @@
-import config from './config';
 import mongoose from "mongoose";
 
 mongoose.Promise = global.Promise;
 
 class Database {
-    private host: string = config.host;
-    private port: number = config.port;
-    private dataBase: string = config.dataBase;
-    private userName: string = config.userName;
-    private password: string = config.password;
+    private host: string = String(process.env.MONGO_HOST);
+    private port: number = Number(process.env.MONGO_PORT);
+    private dataBase: string = String(process.env.MONGO_DATA_BASE);
+    private userName: string = String(process.env.MONGO_USERNAME);
+    private password: string = String(process.env.MONGO_PASSWORD);
     
-    constructor() { }
+    constructor() {}
 
     async connect() {
         try {
